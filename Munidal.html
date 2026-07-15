@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🏆 App Mundial - Copa del Mundo</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: radial-gradient(circle at top, #1a365d 0%, #0a1128 100%);
+            color: #ffffff;
+            min-height: 100vh;
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        h1 {
+            font-size: 2.8rem;
+            color: #fbd38d;
+            text-shadow: 0 4px 10px rgba(251, 211, 141, 0.3);
+            margin-bottom: 10px;
+        }
+
+        header p {
+            color: #a0aec0;
+            font-size: 1.2rem;
+        }
+
+        .countries-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 25px;
+            width: 100%;
+            max-width: 1000px;
+        }
+
+        .country-link {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .country-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 30px 20px;
+            border-radius: 16px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+        }
+
+        .country-card:hover {
+            transform: translateY(-8px);
+            background: rgba(255, 255, 255, 0.12);
+            border-color: #fbd38d;
+            box-shadow: 0 12px 25px rgba(251, 211, 141, 0.2);
+        }
+
+        .flag-avatar {
+            font-size: 3.5rem;
+            margin-bottom: 15px;
+            display: inline-block;
+            filter: drop-shadow(0 4px 6px rgba(0,0,0,0.3));
+        }
+
+        .country-card h2 {
+            font-size: 1.6rem;
+            color: #ffffff;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+
+        .star-rating {
+            color: #fbd38d;
+            margin-top: 8px;
+            font-size: 1.1rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>🏆 HISTORIAL DE CAMPEONES</h1>
+        <p>Selecciona un país para abrir sus estadísticas completas en una nueva pestaña</p>
+    </header>
+
+    <main class="countries-grid">
+        <a href="brasil.html" target="_blank" class="country-link">
+            <div class="country-card">
+                <span class="flag-avatar">🇧🇷</span>
+                <h2>Brasil</h2>
+                <div class="star-rating">⭐⭐⭐⭐⭐</div>
+            </div>
+        </a>
+
+        <a href="alemania.html" target="_blank" class="country-link">
+            <div class="country-card">
+                <span class="flag-avatar">🇩🇪</span>
+                <h2>Alemania</h2>
+                <div class="star-rating">⭐⭐⭐⭐</div>
+            </div>
+        </a>
+
+        <a href="italia.html" target="_blank" class="country-link">
+            <div class="country-card">
+                <span class="flag-avatar">🇮🇹</span>
+                <h2>Italia</h2>
+                <div class="star-rating">⭐⭐⭐⭐</div>
+            </div>
+        </a>
+
+        <a href="argentina.html" target="_blank" class="country-link">
+            <div class="country-card" style="border-left: 4px solid #74acdf;">
+                <span class="flag-avatar">🇦🇷</span>
+                <h2>Argentina</h2>
+                <div class="star-rating">⭐⭐⭐</div>
+            </div>
+        </a>
+
+        <a href="francia.html" target="_blank" class="country-link">
+            <div class="country-card" style="border-left: 4px solid #214392;">
+                <span class="flag-avatar">🇫🇷</span>
+                <h2>Francia</h2>
+                <div class="star-rating">⭐⭐</div>
+            </div>
+        </a>
+
+        <a href="uruguay.html" target="_blank" class="country-link">
+            <div class="country-card">
+                <span class="flag-avatar">🇺🇾</span>
+                <h2>Uruguay</h2>
+                <div class="star-rating">⭐⭐</div>
+            </div>
+        </a>
+
+        <a href="inglaterra.html" target="_blank" class="country-link">
+            <div class="country-card">
+                <span class="flag-avatar">🏴󠁧󠁢󠁥󠁮󠁧󠁿</span>
+                <h2>Inglaterra</h2>
+                <div class="star-rating">⭐</div>
+            </div>
+        </a>
+
+        <a href="espana.html" target="_blank" class="country-link">
+            <div class="country-card">
+                <span class="flag-avatar">🇪🇸</span>
+                <h2>España</h2>
+                <div class="star-rating">⭐</div>
+            </div>
+        </a>
+    </main>
+
+</body>
+</html>
